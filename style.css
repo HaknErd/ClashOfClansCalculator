@@ -1,0 +1,174 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header,
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 24px;
+}
+
+/* Form Styles */
+section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Primary-Form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form,
+#results {
+  flex: 1;
+  margin-right: 20px;
+  border-right: 1px solid #ced4da;
+  padding: 1rem;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Improved Form Look */
+input[type="text"],
+button[type="submit"] {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+}
+
+#Progressbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+#Progressbar div {
+  width: 1%;
+  height: 30px;
+  background-color: #007bff;
+  transition: width 1s ease;
+}
+
+#Progressbar span {
+  font-size: 20px;
+  margin-left: -50%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #007bff;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin-top: 20px;
+  border-top: #333 1px solid;
+  p {
+    margin-bottom: 5px;
+    transform: translateX(20px);
+  }
+}

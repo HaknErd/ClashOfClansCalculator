@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COC account value calculator</title>
+    <meta
+      name="description"
+      content="Calculate the worth of your Clash Of Clans Account"
+    />
+    <meta
+      name="keywords"
+      content="Clash Of Clans, COC, Account, Worth, Calculator"
+    />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Clash Of Clans Account Value Calculator</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Account Information</h2>
+        <div id="Primary-Form">
+          <form id="account-form">
+            <label for="Tag">Please enter your tag</label>
+            <input
+              type="text"
+              name="Tag"
+              id="tagin"
+              placeholder="Eg:#9LJ8UGC9L"
+            />
+            <button type="submit" id="submit">Calculate</button>
+          </form>
+          <div>
+            <h2 id="Status">To begin, please enter your tag.</h2>
+            <div id="Help">
+              <h3>How to find your tag?</h3>
+              <p>
+                Open Clash of Clans, go to your profile and you will find your
+                tag below your name.
+              </p>
+            </div>
+            <div id="Progressbar" class="hidden">
+              <div></div>
+              <span>1%</span>
+            </div>
+            <div id="results" class="hidden">
+              <h3>Loading Results</h3>
+              <p id="Account-Value">Account Value: $<i class="spinner"></i></p>
+              <p id="Account-Details">
+                <i class="spinner"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="faq">
+          <h1>FAQ/About</h1>
+          <h2>What is this?</h2>
+          <p>
+            How much is your Clash of Clans account worth? Find out now by
+            entering your tag above.
+          </p>
+          <h2>How does it work?</h2>
+          <p>
+            We count the value of your account based on the number of resources,
+            buildings, and troops you have etc.
+          </p>
+          <h2>Why do we need your tag?</h2>
+          <p>
+            We need your tag to access your account information and calculate
+            the value of your account.
+          </p>
+
+          <h2>Is it safe?</h2>
+          <p>
+            Yes, it is safe. We do not store your tag or any other information.
+            We only use it to calculate the value of your account and then show
+            it to you. We don't save any data.
+          </p>
+          <h2>How accurate is it?</h2>
+          <p>
+            It is very accurate. We use the official Clash of Clans API to
+            calculate the value of your account. We compare your account with
+            other accounts and calculate the value based on that.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Made with ❤️</p>
+    </footer>
+  </body>
+</html>
